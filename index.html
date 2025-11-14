@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Perkenalan Dinamis — Profil</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <div class="logo">Perkenalan Dinamis</div>
+      <ul class="nav-links">
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#skills">Keahlian</a></li>
+        <li><a href="#portfolio">Portofolio</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero container" id="home">
+      <div class="hero-left">
+        <img class="profile-photo" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop&crop=faces" alt="Foto profesional" />
+      </div>
+      <div class="hero-right">
+        <h1>Halo, saya <span class="name">Nama Anda</span></h1>
+        <h2 class="typing-line">Saya adalah <span id="typing"></span><span class="cursor">|</span></h2>
+        <p class="lead fade">Selamat datang di perkenalan dinamis saya — jelajahi pengalaman dan karya saya di bawah.</p>
+        <a class="btn primary" href="#portfolio">Lihat Portofolio</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about container fade-section">
+      <h3>Tentu, berikut adalah rangkuman konsep tersebut dalam satu paragraf:</h3>
+      <p class="about-text">
+        Konsep utamanya adalah membangun website profil sebagai sebuah "Perkenalan Dinamis" yang memandu pengunjung melalui cerita profesional Anda secara interaktif. Halaman akan dibuka dengan bagian Hero yang kuat, menampilkan foto profesional Anda dan efek mengetik (typing effect) yang dinamis untuk jabatan Anda. Saat pengunjung scroll ke bawah, bagian Tentang Saya dan Keahlian akan muncul secara elegan menggunakan animasi fade-in. Bagian keahlian akan menggunakan tata letak kartu interaktif yang memiliki efek hover (terangkat) saat disentuh mouse. Puncaknya adalah galeri portofolio visual, di mana mengklik satu proyek akan membuka detailnya dalam jendela pop-up (modal), sehingga pengunjung bisa melihat bukti karya Anda tanpa meninggalkan halaman utama, yang semuanya mengarah pada ajakan bertindak (CTA) yang jelas di akhir halaman.
+      </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills container fade-section">
+      <h3>Keahlian</h3>
+      <div class="skills-grid">
+        <article class="skill-card">
+          <h4>Desain UI/UX</h4>
+          <p>Mendesain antarmuka yang ramah pengguna dan estetis.</p>
+        </article>
+
+        <article class="skill-card">
+          <h4>Pengembangan Web</h4>
+          <p>HTML, CSS, JavaScript, responsive design.</p>
+        </article>
+
+        <article class="skill-card">
+          <h4>Visualisasi Portofolio</h4>
+          <p>Menyusun galeri interaktif untuk menampilkan karya.</p>
+        </article>
+
+        <article class="skill-card">
+          <h4>Komunikasi</h4>
+          <p>Menyampaikan cerita profesional dengan jelas dan efektif.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="portfolio container fade-section">
+      <h3>Portofolio Visual</h3>
+      <div class="portfolio-grid">
+        <button class="project-card" data-title="Proyek A" data-img="https://via.placeholder.com/800x500?text=Proyek+A" data-desc="Deskripsi singkat Proyek A. Bukti karya: desain responsif dan pengalaman pengguna.">
+          <img src="https://via.placeholder.com/400x250?text=Proyek+A" alt="Proyek A" />
+          <div class="proj-meta">
+            <h4>Proyek A</h4>
+            <p>Desain Web Responsif</p>
+          </div>
+        </button>
+
+        <button class="project-card" data-title="Proyek B" data-img="https://via.placeholder.com/800x500?text=Proyek+B" data-desc="Deskripsi singkat Proyek B. Fokus pada visual dan interaksi.">
+          <img src="https://via.placeholder.com/400x250?text=Proyek+B" alt="Proyek B" />
+          <div class="proj-meta">
+            <h4>Proyek B</h4>
+            <p>Visual Branding</p>
+          </div>
+        </button>
+
+        <button class="project-card" data-title="Proyek C" data-img="https://via.placeholder.com/800x500?text=Proyek+C" data-desc="Deskripsi singkat Proyek C. Contoh integrasi UI dan front-end.">
+          <img src="https://via.placeholder.com/400x250?text=Proyek+C" alt="Proyek C" />
+          <div class="proj-meta">
+            <h4>Proyek C</h4>
+            <p>Prototype Interaktif</p>
+          </div>
+        </button>
+
+        <button class="project-card" data-title="Proyek D" data-img="https://via.placeholder.com/800x500?text=Proyek+D" data-desc="Deskripsi singkat Proyek D. Dokumentasi dan hasil akhir.">
+          <img src="https://via.placeholder.com/400x250?text=Proyek+D" alt="Proyek D" />
+          <div class="proj-meta">
+            <h4>Proyek D</h4>
+            <p>Case Study</p>
+          </div>
+        </button>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="contact" class="cta container fade-section">
+      <h3>Siap berkolaborasi?</h3>
+      <p>Jika Anda tertarik melihat lebih banyak atau berdiskusi tentang proyek, hubungi saya.</p>
+      <a class="btn secondary" href="mailto:email@domain.com">Hubungi Saya</a>
+    </section>
+  </main>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" data-close aria-label="Tutup">&times;</button>
+      <h4 id="modal-title"></h4>
+      <img id="modal-image" alt="" />
+      <p id="modal-desc"></p>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Perkenalan Dinamis — Dibuat dengan HTML, CSS, JS.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
